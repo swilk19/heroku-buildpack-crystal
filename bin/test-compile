@@ -81,23 +81,23 @@ start "Installing Dependencies"
 shards install --test
 finished
 
-if [ -f app.cr ]; then
-    start "Compiling app.cr (using old behaviour, app.cr exists - ignoring shard.yml)"
-    crystal build app.cr --release $NO_DEBUG_IF_AVAILABLE
-    finished
-else
-    eval $(parse_yaml shard.yml "shard_")
-    start "Compiling src/${shard_name}.cr (auto-detected from shard.yml)"
-    crystal build src/${shard_name}.cr --release -o app
-    finished
-fi
+# if [ -f app.cr ]; then
+#     start "Compiling app.cr (using old behaviour, app.cr exists - ignoring shard.yml)"
+#     crystal build app.cr --release $NO_DEBUG_IF_AVAILABLE
+#     finished
+# else
+#     eval $(parse_yaml shard.yml "shard_")
+#     start "Compiling src/${shard_name}.cr (auto-detected from shard.yml)"
+#     crystal build src/${shard_name}.cr --release -o app
+#     finished
+# fi
 
-start "Setting up Lucky tasks"
+# start "Setting up Lucky tasks"
 
-crystal build tasks.cr -o $BUILD_DIR/.heroku/lucky/lucky
+# crystal build tasks.cr -o $BUILD_DIR/.heroku/lucky/lucky
 
 echo "export PATH=\$PATH:\$HOME/.heroku/lucky" >> "$BUILD_DIR/.profile.d/lucky_environment.sh"
 
-crystal spec
+# crystal spec
 
 finished
