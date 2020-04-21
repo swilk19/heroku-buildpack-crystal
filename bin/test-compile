@@ -19,8 +19,6 @@ ls $2
 echo "--------"
 ls $3
 echo "--------"
-cat "$BUILD_DIR/.profile.d/crystal_environment.sh"
-echo "Done"
 
 cd $BUILD_DIR
 crystal spec
