@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/bash -e
+
+set -e
+
 # bin/test-compile <build-dir> <cache-dir> <env-dir>
 
 BUILD_DIR=$1
