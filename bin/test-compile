@@ -16,5 +16,7 @@ ls $2
 echo "--------"
 ls $3
 echo "--------"
+ls $BUILD_DIR/.heroku/crystal
+echo "--------"
 cat "$BUILD_DIR/.profile.d/crystal_environment.sh"
 echo "Done"
