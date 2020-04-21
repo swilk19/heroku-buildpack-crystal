@@ -19,3 +19,7 @@ echo "--------"
 cat "$BUILD_DIR/.profile.d/crystal_environment.sh"
 echo "--------"
 echo "Done"
+
+CRYSTAL_DIR=$BUILD_DIR/.heroku/crystal
+ls CRYSTAL_DIR/bin
+echo "--------"
