@@ -19,6 +19,7 @@ ls -a $2
 echo "--------"
 ls -a $3
 echo "--------"
-
+ls -a $HOME
+echo "--------"
 cd $BUILD_DIR
 crystal spec
