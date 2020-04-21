@@ -5,10 +5,14 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 echo $1
+echo "--------"
 echo $2
+echo "--------"
 echo $3
 
 ls $1
+echo "--------"
 ls $2
+echo "--------"
 ls $3
 echo "Done"
