@@ -13,11 +13,11 @@ echo $2
 echo "--------"
 echo $3
 
-ls $1
+ls -a $1
 echo "--------"
-ls $2
+ls -a $2
 echo "--------"
-ls $3
+ls -a $3
 echo "--------"
 
 cd $BUILD_DIR
