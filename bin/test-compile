@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+ls /tmp/build/.heroku/crystal
 echo "Hello, world!"
