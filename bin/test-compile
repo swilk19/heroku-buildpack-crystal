@@ -15,4 +15,7 @@ echo "--------"
 ls $2
 echo "--------"
 ls $3
+echo "--------"
+cat "$BUILD_DIR/.profile.d/crystal_environment.sh"
+echo "--------"
 echo "Done"
