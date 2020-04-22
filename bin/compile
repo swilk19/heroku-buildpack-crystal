@@ -41,10 +41,6 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-echo "Hello, World!" >> $BUILD_DIR/helloworld.txt
-echo "Hello, World!" >> $CACHE_DIR/helloworld.txt
-echo "Hello, World!" >> $ENV_DIR/helloworld.txt
-
 export LUCKY_ENV=production
 export SKIP_LUCKY_TASK_PRECOMPILATION=1
 
